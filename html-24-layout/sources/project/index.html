@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 урок: макет</title>
+    <link rel="shortcut icon" type="image/x-icon" href="html-logo.svg">
+    <style>
+      header {
+        background: #fdc141;
+        height: 60px;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .quote {
+        background: #ffe7cd;
+      }
+
+      footer {
+        background: #8f41fd;
+        color: #fff;
+        height: 300px;
+      }
+
+      footer a {
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#first">Первая секция</a>
+        <a href="#second">Вторая секция</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Заголовок</h1>
+      <section id="first">
+        <h2>Та самая первая секция</h2>
+        <img
+          src="data:image/png;base64,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"
+          alt="векторное изображение монитора"
+        >
+        <p>
+          Далеко-далеко за словесными горами в стране гласных, и согласных живут
+          рыбные тексты. Образ запятой алфавит, что меня последний одна коварный
+          большого реторический продолжил рыбными вопроса, за использовало, рот
+          диких даль курсивных рукопись скатился себя. Первую он образ страну.
+          Которое над власти, о пор ipsum домах взгляд деревни свою, бросил
+          океана агентство! Переписали ему живет вскоре вопроса коварных,
+          послушавшись дороге не великий, единственное его текст
+          безорфографичный рыбного буквоград, букв все речью путь пояс своих
+          реторический рот которой ручеек взобравшись заглавных что. Взобравшись
+          пустился города, проектах языкового грамматики вопроса текстов точках
+          речью обеспечивает одна дороге бросил оксмокс, безопасную последний
+          океана щеке однажды буквоград живет.
+        </p>
+        <ol>
+          <li>Элемент списка</li>
+          <li>Элемент списка</li>
+          <li>Элемент списка</li>
+          <li>Элемент списка</li>
+          <li>Элемент списка</li>
+          <li>Элемент списка</li>
+          <li>Элемент списка</li>
+        </ol>
+      </section>
+      <section id="second">
+        <h2>Та самая вторая секция</h2>
+        <p>
+          Далеко-далеко за словесными горами в стране гласных, и согласных живут
+          рыбные тексты. Образ запятой алфавит, что меня последний одна коварный
+          большого реторический продолжил рыбными вопроса, за использовало, рот
+          диких даль курсивных рукопись скатился себя. Первую он образ страну.
+          Которое над власти, о пор ipsum домах взгляд деревни свою, бросил
+          океана агентство! Переписали ему живет вскоре вопроса коварных,
+          послушавшись дороге не великий, единственное его текст
+          безорфографичный рыбного буквоград, букв все речью путь пояс своих
+          реторический рот которой ручеек взобравшись заглавных что. Взобравшись
+          пустился города, проектах языкового грамматики вопроса текстов точках
+          речью обеспечивает одна дороге бросил оксмокс, безопасную последний
+          океана щеке однажды буквоград живет.
+        </p>
+        <div class="quote">
+          <blockquote>
+            <p>
+              Верстать - это здорово. Признаюсь, я частенько верстаю перед
+              съёмками, чтобы снять напряжение. Жизнь актёра - это, конечно,
+              круто, но если честно, в выходной денёк я не могу удержаться от
+              того, чтобы уединиться у себя в комнатушке с чашечкой кофе, вс
+              кодом и курсами на learn.aroken.ru!
+            </p>
+          </blockquote>
+          - Джейсон Стэтхем
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h4>Ссылки</h4>
+        <ul>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+          <li>
+            <a href="#">Ссылка</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
