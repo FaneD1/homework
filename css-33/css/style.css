@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page {
+    width: 95%;
+    margin: 30px auto;
+}
+
+/* Верхняя строка с описанием */
+.description {
+    margin-bottom: 15px;font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Горизонтальные линии как на слайде */
+hr {
+    border: none;
+    border-top: 1px solid #666;
+    margin: 15px 0;
+}
+
+/* Lorem-абзацы */
+.lorem {
+    margin: 10px 0;
+}
+
+/* Первый абзац – зачёркнутый */
+.lorem--strike {
+    text-decoration: line-through;
+}
+
+/* Второй абзац – капсом и по центру, без курсива */
+.lorem--upper {
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+}
+
+/* Расстояние между словами */
+.words {
+    margin-top: 25px;
+    word-spacing: 30px;
+    color: #5a006f;
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+/* Заголовок блока с межбуквенным интервалом */
+.letters-title {
+    margin-top: 25px;
+}
+
+/* Строка c расстоянием между буквами */
+.letters-spaced {
+    letter-spacing: 5px;
+    text-decoration: double underline;
+    margin-top: 5px;
+}
