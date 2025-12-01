@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cards {
+    width: 1300px;
+    height: 600px;
+    
+    text-align: left;
+    background: rgb(211, 206, 206);
+    overflow: auto;
+    border-radius: 18px;
+    border: 2px solid #000000;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 200px;       
+    margin: 12px;        
+
+    background: #d9c5a3;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    font-size: 16px;    
+    
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
