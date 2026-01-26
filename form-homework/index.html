@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Формы ДЗ</title>
+	</head>
+	<body>
+		<form>
+			<fieldset class="form-container">
+				<h2>Ваши личные данные</h2>
+				<label class="form-group">
+					Ваше имя
+					<input type="text" id="name" required placeholder="Имя" />
+				</label>
+				<label class="form-group">
+					Ваш возраст
+					<input type="number" id="age" value="35" min="6" required />
+				</label>
+				<label class="form-group">
+					Ваш номер телефона
+					<input type="tel" required placeholder="89999999999" />
+				</label>
+				<label class="form-group">
+					Ваша Почта
+					<input type="email" required placeholder="test@gmail.com" />
+				</label>
+
+				<label class="form-group">
+					Сообщение
+					<textarea name="message" id="message">Hello programmers!</textarea>
+				</label>
+				<div class="checkbox-group">
+					<input type="checkbox" id="rules" name="rules" required />
+					<label for="rules">Я принимаю правила</label>
+				</div>
+
+				<button>Отправить</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
